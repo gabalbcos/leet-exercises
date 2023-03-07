@@ -19,3 +19,14 @@ var findKthPositive = function(arr, k) {
     console.log(finalArray);
     return finalArray[k-1];
 };
+
+//1. Two Sum
+var twoSum = function(nums, target) {
+   for (let i = 0; i < nums.length; i++)
+    for(let j = 0; j < nums.length; j++){
+        if(nums[i] + nums[j] === target && i != j)
+            return [i, j]
+
+    }
+    
+};
