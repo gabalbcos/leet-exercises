@@ -30,3 +30,12 @@ var twoSum = function(nums, target) {
     }
     
 };
+
+//9. Palindrome Number
+var isPalindrome = function(num) {
+    let reverseNum = parseInt(num.toString().split("").reverse().join(""));
+    if (num === reverseNum){
+        return true
+    }
+    return false
+};
